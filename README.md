@@ -1,5 +1,4 @@
 # Log Analysis Project
-# Udacity Full Stack Nanodegree
 -----------------------
 
 # Project Overview

@@ -3,6 +3,9 @@
 
 # Project Overview
 
+This project sets up a PostgreSQL database for a news website.
+The provided Python script main.py uses the psycopg2 library to query the database and produce a report that answers the following questions
+
 The reporting tool needed to answer the following questions:
 
 - What are the most popular three articles of all time?
@@ -12,13 +15,8 @@ The reporting tool needed to answer the following questions:
 # How to Run the Code
 
 - Clone or download the project;
-- Connect to vagrant using vagrant up and then vagrant ssh;
-- Run the main.py;
-- You will get a log data.;
-
-# Requirements
-
-- Python;
-- Vagrant - A virtual environment builder and manager;
-- VirtualBox - Virtualization product;
-- Git - Version control system;
+- Make sure you have newsdata.zip the database of website,
+<a href="https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip">Click Here to Download</a>
+- before start, you must creat news database "news" with this command: "psql -d news -f newsdata.sql"
+- Run the script with this command: "python main.py"
+- You will get results on your terminal;
